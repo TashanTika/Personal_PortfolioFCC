@@ -1,5 +1,118 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+}
 
 body{
     font-family: 'Roboto Condensed', sans-serif;
+    background: url("images/sky.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color:white;
+}
+
+#navbar{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border:black;
+    border-radius: 50%;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#navbar a{
+    color: white;
+    text-decoration: none;
+    padding-left: 300px;
+    font-weight: bold;
+}
+
+#welcome-section{
+    padding-top: 20px;
+    text-align: center;
+    font-size: x-large;
+}
+
+/* https://www.w3schools.com/howto/howto_css_column_cards.asp */
+
+.column {
+    float: left;
+    width: 33.3333%;
+    padding: 0px 10px;
+    
+}
+
+.row {
+    margin: 0 -5px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.project-tile {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+}
+
+.project-tile a{
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+.column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
+}
+
+
+/*  
+*/
+
+h1 {
+    color: white;
+}
+
+
+#about {
+    display: flex;
+    height: 30vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.typing {
+    margin-left: 10px;
+    position: relative;
+    
+}
+
+.typing::after {
+    content: " ";
+    position: absolute;
+    right: -5px;
+    width: 1px;
+    height: 100%;
+    border-right: 2px solid black;
+    animation: blink 0.4s infinite ease;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0; 
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
