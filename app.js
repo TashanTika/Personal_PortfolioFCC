@@ -22,3 +22,5 @@ if (letter.length === currentText.length) {
 setTimeout(type, 200);
 
 }());
+
+// Laura Something On Git ?
